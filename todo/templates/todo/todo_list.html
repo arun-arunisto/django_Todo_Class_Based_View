@@ -1,0 +1,28 @@
+{% extends 'todo/base.html' %}
+{% block title %} Todo List {% endblock %}
+{% block content %}
+<div class="create">
+    <a href="/create">Create Todo</a>
+</div>
+{% if object_list %}
+<table class="table table-primary table-striped">
+    <thead>
+    <tr>
+        <th scope="col">TODO TITLE</th>
+        <th scope="col">TODO DESCRIPTION</th>
+        <th scope="col">ACTION</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for todo in object_list %}
+        <tr>
+            <td>{{todo.title}}</td>
+            <td>{{todo.description}}</td>
+            <td><a href="/update/{{todo.id}}/">UPDATE</a>
+            <a href="/delete/{{todo.id}}/">DELETE</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+{% endblock %}

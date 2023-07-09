@@ -1,0 +1,13 @@
+{% extends 'todo/base.html' %}
+{% block title %} Delete Todo {% endblock %}
+{% block content %}
+<div class="title">
+  <h4>TODO DELETE</h4>
+</div>
+<hr>
+<form method="post">
+  {% csrf_token %}<br>
+  Are you sure want to delete this Todo? <br>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
