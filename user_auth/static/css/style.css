@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+    padding: 20px;
+}
+.header span {
+    color: green;
+}
+
+.content {
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
