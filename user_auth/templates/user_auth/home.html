@@ -1,9 +1,9 @@
 {% extends 'user_auth/base.html' %}
 {% block title %} Home Page {% endblock %}
 {% block content %}
-{}
 {% if user.is_authenticated %}
 <p>{{message}}</p>
 <h2>{{user.username}}</h2>
+<a href="/logout">Logout</a>
 {% endif %}
 {% endblock %}
