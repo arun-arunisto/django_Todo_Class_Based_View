@@ -18,3 +18,9 @@ Run the above command
 then run the below command
 <br>
 <code>python manage.py runserver</code>
+
+## Now we create a user login and logout feature using class based views on 12-07-2023
+
+to login use <i>/login</i> on url
+<br>
+we create a new app named for this <b>"user_auth"</b> you can check out the views and url features on <b>"user_auth"</b> app
